@@ -1,0 +1,47 @@
+// ----------------------------------------------
+// Font
+// ----------------------------------------------
+// Font Weight
+@for $counter from 1 through 8 {
+  .f-w-#{ $counter * 100 } {
+    font-weight: ($counter * 100) !important;
+  }
+}
+
+// Font Size
+@for $counter from 6 through 20 {
+  .f-s-#{ $counter * 2 } {
+    font-size: ($counter * 2px) !important;
+  }
+}
+
+.f-s-0 {
+  font-size: 0 !important;
+}
+
+//Font Color
+.f-grey{
+  color: $grey-light;
+  a{
+    color: $grey-light;
+  }
+}
+.c-grey-3{
+  &,a{
+    color: #333;
+
+  }
+
+}
+.c-grey-6{
+  &,a{
+    color: #666;
+
+  }
+}
+.c-grey-9{
+  &,a{
+    color: #999;
+
+  }
+}
