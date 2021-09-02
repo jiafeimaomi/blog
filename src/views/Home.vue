@@ -82,7 +82,7 @@ export default {
       this.$refs[formName].validate((valid) => {
         if (!valid) return
         api.login({ ...this.formData }).then((res) => {
-            console.log("---res------", res);
+            this.$router.push('/blog')
           });
       });
     },

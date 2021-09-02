@@ -37,6 +37,10 @@ module.exports = {
         target: 'http://localhost:3000',
         changeOrigin: true,
       },
+      [process.env.VUE_APP_BASE_BLOG_API]: {
+        target: 'http://localhost:3000',
+        changeOrigin: true,
+      },
     },
     disableHostCheck: true
   },

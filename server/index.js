@@ -1,4 +1,6 @@
 const userApi = require('./api/userApi')
+const blogApi = require('./api/blogApi')
+
 // const fs = require('fs')
 // const path = require('path')
 const express = require('express')
@@ -20,6 +22,8 @@ app.all('*', function (req, res, next) {
 
 // 后端api路由
 app.use('/api/user', userApi)
+
+app.use('/api/blog', blogApi)
 
 // 监听端口
 app.listen(3000)
